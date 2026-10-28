@@ -1,0 +1,1760 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AplicacaoBackAula",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Atendimento": {
+      "get": {
+        "tags": [
+          "Atendimento"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AtendimentoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Atendimento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Atendimento/{id}": {
+      "get": {
+        "tags": [
+          "Atendimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AtendimentoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Atendimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtendimentoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Atendimento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Categorium": {
+      "get": {
+        "tags": [
+          "Categorium"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Categorium"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Categorium"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Categorium"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Categorium"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Categorium/{id}": {
+      "get": {
+        "tags": [
+          "Categorium"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Categorium"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Categorium"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categorium"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Categorium"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EntradaProduto": {
+      "get": {
+        "tags": [
+          "EntradaProduto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntradaProdutoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntradaProdutoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntradaProdutoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EntradaProduto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EntradaProduto/{id}": {
+      "get": {
+        "tags": [
+          "EntradaProduto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntradaProdutoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntradaProdutoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntradaProdutoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EntradaProduto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntradaProdutoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EntradaProduto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Funcionario": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FuncionarioDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FuncionarioDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FuncionarioDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Funcionario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Funcionario/{id}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuncionarioDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuncionarioDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PessoaEndereco": {
+      "get": {
+        "tags": [
+          "PessoaEndereco"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PessoaDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PessoaDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PessoaDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PessoaEndereco"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PessoaEndereco/{id}": {
+      "get": {
+        "tags": [
+          "PessoaEndereco"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PessoaDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PessoaEndereco"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PessoaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PessoaEndereco"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pessoa"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProdutoItem": {
+      "get": {
+        "tags": [
+          "ProdutoItem"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ProdutoItem"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProdutoItem/{id}": {
+      "get": {
+        "tags": [
+          "ProdutoItem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProdutoDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ProdutoItem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ProdutoItem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Atendimento": {
+        "type": "object",
+        "properties": {
+          "idatendimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idpessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataAtendimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "statusAtendimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "atendimentoitems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Atendimentoitem"
+            },
+            "nullable": true
+          },
+          "idpessoaNavigation": {
+            "$ref": "#/components/schemas/Pessoa"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtendimentoDTO": {
+        "type": "object",
+        "properties": {
+          "idAtendimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataAtendimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "statusAtendimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "atendimentoItens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AtendimentoItemDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtendimentoItemDTO": {
+        "type": "object",
+        "properties": {
+          "idAtendimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idItem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFuncionario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeItens": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorunitarioEntrada": {
+            "type": "number",
+            "format": "double"
+          },
+          "itemNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricaoItem": {
+            "type": "string",
+            "nullable": true
+          },
+          "precoItem": {
+            "type": "number",
+            "format": "double"
+          },
+          "nomeFuncionario": {
+            "type": "string",
+            "nullable": true
+          },
+          "cargoFuncionario": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Atendimentoitem": {
+        "type": "object",
+        "properties": {
+          "idatendimento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iditem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idfuncionario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeItens": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorunitarioEntrada": {
+            "type": "number",
+            "format": "double"
+          },
+          "idatendimentoNavigation": {
+            "$ref": "#/components/schemas/Atendimento"
+          },
+          "idfuncionarioNavigation": {
+            "$ref": "#/components/schemas/Funcionario"
+          },
+          "iditemNavigation": {
+            "$ref": "#/components/schemas/Item"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Categorium": {
+        "type": "object",
+        "properties": {
+          "idcategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoria": {
+            "type": "string",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Item"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Endereco": {
+        "type": "object",
+        "properties": {
+          "idendereco": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idpessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "complemento": {
+            "type": "string",
+            "nullable": true
+          },
+          "idpessoaNavigation": {
+            "$ref": "#/components/schemas/Pessoa"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EnderecoDTO": {
+        "type": "object",
+        "properties": {
+          "idPessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "complemento": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntradaProduto": {
+        "type": "object",
+        "properties": {
+          "identradaProduto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iditem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataEntradaProduto": {
+            "type": "string",
+            "format": "date"
+          },
+          "quantidadeEntrada": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorUnitarioEntrada": {
+            "type": "number",
+            "format": "double"
+          },
+          "iditemNavigation": {
+            "$ref": "#/components/schemas/Estoque"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntradaProdutoDTO": {
+        "type": "object",
+        "properties": {
+          "idEntradaProduto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idItem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataEntradaProduto": {
+            "type": "string",
+            "format": "date"
+          },
+          "quantidadeEntrada": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorUnitarioEntrada": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantidadeEstoque": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "produto": {
+            "$ref": "#/components/schemas/ProdutoDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Estoque": {
+        "type": "object",
+        "properties": {
+          "iditem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantidadeEstoque": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entradaProdutos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EntradaProduto"
+            },
+            "nullable": true
+          },
+          "iditemNavigation": {
+            "$ref": "#/components/schemas/Produto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Funcionario": {
+        "type": "object",
+        "properties": {
+          "idpessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataAdmissao": {
+            "type": "string",
+            "format": "date"
+          },
+          "atendimentoitems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Atendimentoitem"
+            },
+            "nullable": true
+          },
+          "idpessoaNavigation": {
+            "$ref": "#/components/schemas/Pessoa"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FuncionarioDTO": {
+        "type": "object",
+        "properties": {
+          "idPessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataAdmissao": {
+            "type": "string",
+            "format": "date"
+          },
+          "pessoa": {
+            "$ref": "#/components/schemas/PessoaDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Item": {
+        "type": "object",
+        "properties": {
+          "iditem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idcategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item1": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricaoItem": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "tipoItem": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativoProdutoServico": {
+            "type": "string",
+            "nullable": true
+          },
+          "atendimentoitems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Atendimentoitem"
+            },
+            "nullable": true
+          },
+          "idcategoriaNavigation": {
+            "$ref": "#/components/schemas/Categorium"
+          },
+          "produto": {
+            "$ref": "#/components/schemas/Produto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pessoa": {
+        "type": "object",
+        "properties": {
+          "idpessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpf": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefone": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ativoPessoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "atendimentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Atendimento"
+            },
+            "nullable": true
+          },
+          "enderecos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Endereco"
+            },
+            "nullable": true
+          },
+          "funcionario": {
+            "$ref": "#/components/schemas/Funcionario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PessoaDTO": {
+        "type": "object",
+        "properties": {
+          "idPessoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpf": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefone": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ativoPessoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "enderecos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EnderecoDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Produto": {
+        "type": "object",
+        "properties": {
+          "iditem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoPreco": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precoVenda": {
+            "type": "number",
+            "format": "double"
+          },
+          "unidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "estoque": {
+            "$ref": "#/components/schemas/Estoque"
+          },
+          "iditemNavigation": {
+            "$ref": "#/components/schemas/Item"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoDTO": {
+        "type": "object",
+        "properties": {
+          "idCategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricaoItem": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tipoItem": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativoProdutoServico": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPreco": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precoVenda": {
+            "type": "number",
+            "format": "double"
+          },
+          "unidade": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
