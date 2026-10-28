@@ -238,6 +238,23 @@ namespace AplicacaoBackAula.Controllers
 
 
 
+
+        // DESATIVAR PRODUTO SEM EXCLUIR O HISTÓRICO
+        [HttpPatch("{id:int}/desativar")]
+        public async Task<IActionResult> DesativarProduto(int id)
+        {
+            var produto = await _context.Produtos
+                .Include(p => p.IditemNavigation)
+                .FirstOrDefaultAsync(p => p.Iditem == id);
+
+            if (produto == null)
+                return NotFound(new { mensagem = "Produto não encontrado." });
+
+            produto.IditemNavigation.AtivoProdutoServico = "N";
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
     }//FIM CLASSE
 
 }//FIM NAMESPACE
