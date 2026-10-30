@@ -194,8 +194,8 @@ namespace AplicacaoBackAula.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
         {
             var pessoa = await _context.Pessoas
                 .Include(p => p.Enderecos)
@@ -206,10 +206,21 @@ namespace AplicacaoBackAula.Controllers
                 return NotFound(new { mensagem = "Cliente não encontrado." });
 
             if (pessoa.Atendimentos.Count > 0)
-                return Conflict(new { mensagem = "Não é possível excluir um cliente que possui atendimentos registrados." });
+            {
+                return Conflict(new
+                {
+                    mensagem = "Não é possível excluir um cliente que possui atendimentos registrados."
+                });
+            }
 
+            // Remove os endereços vinculados à pessoa.
+            _context.Enderecos.RemoveRange(pessoa.Enderecos);
+
+            // Remove a pessoa.
             _context.Pessoas.Remove(pessoa);
+
             await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }

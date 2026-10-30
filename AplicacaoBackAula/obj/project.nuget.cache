@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CzIBsLALoGY=",
+  "dgSpecHash": "VTQFuPT9TsE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\guilh\\Downloads\\Atividade_BACKEND_03 (1)\\Atividade_BACKEND_03\\Back_End\\AplicacaoBackAula\\AplicacaoBackAula.csproj",
+  "projectFilePath": "C:\\Users\\guilh\\source\\repos\\Atividade_BACKEND_03\\AplicacaoBackAula\\AplicacaoBackAula.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guilh\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\guilh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

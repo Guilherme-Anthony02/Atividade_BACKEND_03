@@ -887,24 +887,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -925,24 +908,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pessoa"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -1352,7 +1318,7 @@
       "EnderecoDTO": {
         "type": "object",
         "properties": {
-          "idPessoa": {
+          "idEndereco": {
             "type": "integer",
             "format": "int32"
           },

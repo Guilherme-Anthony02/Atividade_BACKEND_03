@@ -43,7 +43,7 @@ namespace AplicacaoBackAula.Controllers
                         AtivoPessoa = f.IdpessoaNavigation.AtivoPessoa,
                         Enderecos = f.IdpessoaNavigation.Enderecos.Select(e => new EnderecoDTO
                         {
-                            IdPessoa = e.Idpessoa,
+                            IdEndereco = e.Idendereco,
                             CEP = e.Cep,
                             Numero = e.Numero,
                             Complemento = e.Complemento
@@ -80,7 +80,7 @@ namespace AplicacaoBackAula.Controllers
                         AtivoPessoa = f.IdpessoaNavigation.AtivoPessoa,
                         Enderecos = f.IdpessoaNavigation.Enderecos.Select(e => new EnderecoDTO
                         {
-                            IdPessoa = e.Idpessoa,
+                            IdEndereco = e.Idendereco,
                             CEP = e.Cep,
                             Numero = e.Numero,
                             Complemento = e.Complemento
@@ -199,7 +199,7 @@ namespace AplicacaoBackAula.Controllers
                             AtivoPessoa = f.IdpessoaNavigation.AtivoPessoa,
                             Enderecos = f.IdpessoaNavigation.Enderecos.Select(e => new EnderecoDTO
                             {
-                                IdPessoa = e.Idpessoa,
+                                IdEndereco = e.Idendereco,
                                 CEP = e.Cep,
                                 Numero = e.Numero,
                                 Complemento = e.Complemento
@@ -291,11 +291,11 @@ namespace AplicacaoBackAula.Controllers
                 foreach (var endPessoa in dto.Pessoa.Enderecos)
                 {
                     //VERIFICAR SE O ENDEREÇO JÁ EXISTE (COM ID > 0)
-                    if (endPessoa.IdPessoa > 0)
+                    if (endPessoa.IdEndereco > 0)
                     {
                         //BUSCAR O ENDEREÇO NO MODELO
                         var endereco = funcionario.IdpessoaNavigation.Enderecos
-                            .FirstOrDefault(e => e.Idpessoa == endPessoa.IdPessoa);
+                            .FirstOrDefault(e => e.Idpessoa == endPessoa.IdEndereco);
 
                         //ATUALIZAR ENDEREÇO EXISTENTE
                         if (endereco != null)
