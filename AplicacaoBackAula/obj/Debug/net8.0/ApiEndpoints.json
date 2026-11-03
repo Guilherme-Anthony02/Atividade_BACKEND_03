@@ -317,6 +317,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AplicacaoBackAula.Controllers.EstoqueController",
+    "Method": "GetEstoque",
+    "RelativePath": "api/Estoque",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.EstoqueController",
+    "Method": "GetEstoquePorId",
+    "RelativePath": "api/Estoque/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AplicacaoBackAula.Controllers.FuncionarioController",
     "Method": "GetAll",
     "RelativePath": "api/Funcionario",
@@ -419,6 +445,107 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.MovimentacaoEstoqueController",
+    "Method": "RegistrarEntrada",
+    "RelativePath": "api/MovimentacaoEstoque/entrada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AplicacaoBackAula.Controllers.EntradaEstoqueRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.PedidosController",
+    "Method": "Listar",
+    "RelativePath": "api/Pedidos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "situacao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.PedidosController",
+    "Method": "Criar",
+    "RelativePath": "api/Pedidos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AplicacaoBackAula.DTO.PedidoCheckoutDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.PedidosController",
+    "Method": "Consultar",
+    "RelativePath": "api/Pedidos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.PedidosController",
+    "Method": "AtualizarSituacao",
+    "RelativePath": "api/Pedidos/{id}/situacao",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "AplicacaoBackAula.DTO.AtualizarSituacaoPedidoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.PedidosController",
+    "Method": "ListarDoCliente",
+    "RelativePath": "api/Pedidos/cliente/{idPessoa}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPessoa",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -622,6 +749,101 @@
     "Method": "DeleteProduto",
     "RelativePath": "api/ProdutoItem/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ProdutoItemController",
+    "Method": "DesativarProduto",
+    "RelativePath": "api/ProdutoItem/{id}/desativar",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ServicoController",
+    "Method": "Listar",
+    "RelativePath": "api/Servico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ServicoController",
+    "Method": "Criar",
+    "RelativePath": "api/Servico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AplicacaoBackAula.Controllers.ServicoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ServicoController",
+    "Method": "Consultar",
+    "RelativePath": "api/Servico/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ServicoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Servico/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "AplicacaoBackAula.Controllers.ServicoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AplicacaoBackAula.Controllers.ServicoController",
+    "Method": "Desativar",
+    "RelativePath": "api/Servico/{id}/desativar",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
